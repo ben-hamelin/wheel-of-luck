@@ -9,11 +9,14 @@
 <input type="button" value="spin" onclick="spin()">
 
 <div id="main" style="width: 100%; padding: 1em; border: 1px solid grey;">
-    <h2>Puzzle</h2>
-<div id="theBoard" style="margin-top: 5em; border: 2px solid blue; width: 45%; min-height: 250px;float: left"></div>
-    <h2>Scoreboard</h2>
-<div id="scoreboard" style=" margin-left: 5%; margin-top: 5em; border: 6px solid purple; width: 45%; min-height: 250px; float: left;"></div>
-    <br clear="all" />
+    <div class="container" style="margin-top: 5em; border: 6px solid blue; width: 45%; min-height: 250px; float: left">
+        <h2>Puzzle</h2>
+        <div id="theBoard"></div>
+    </div>
+    <div class="container" style=" margin-left: 5%; margin-top: 5em; border: 6px solid purple; width: 45%; min-height: 250px; float: left;">
+        <h2>Scoreboard</h2>
+        <div id="scoreboard"></div>
+    </div>
 </div>
 </body>
 </html>
