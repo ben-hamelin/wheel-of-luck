@@ -1,0 +1,8 @@
+input.letter {
+    width: 2em;
+    text-transform: uppercase;
+}
+input.spacer {
+    border: none;
+    width: 2em;
+}

@@ -16,11 +16,14 @@ function createPuzzle() {
 }
 
 function drawPuzzle(string){
-    //var letters =  arraynew();
     for (let x of string) {
-        console.log(x);
         var letter = document.createElement("input");
         letter.value=x;
+        if (x == ' ') {
+            letter.className ="spacer";
+        } else {
+            letter.className = "letter";
+        }
         document.getElementById('theBoard').appendChild(letter);
     }
 }
