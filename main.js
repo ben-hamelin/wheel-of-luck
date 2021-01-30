@@ -9,3 +9,24 @@ function spin() {
 
 
 }
+
+function createPuzzle() {
+    const ThePuzzle = "volcano";
+    return ThePuzzle;
+}
+
+function drawPuzzle(string){
+    //var letters =  arraynew();
+    for (let x of string) {
+        console.log(x);
+        var letter = document.createElement("input");
+        letter.value=x;
+        document.getElementById('theBoard').appendChild(letter);
+    }
+}
+
+function clearboard(){
+    const myNode = document.getElementById("theBoard");
+    myNode.innerHTML = '';
+
+}
