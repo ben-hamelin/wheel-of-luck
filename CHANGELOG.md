@@ -21,9 +21,14 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ### Security
 
+## [0.1.1] - 2021-03-01
+### Changed
+Nothing just testing changelog.
+
 ## [0.1.0] - 2021-03-01
 ### Added
 Added changelog, initial release.
 
-[Unreleased]: https://github.com/ben-hamelin/wheel-of-luck/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/ben-hamelin/wheel-of-luck/compare/0.1.1...HEAD
+[0.1.1]: https://github.com/ben-hamelin/wheel-of-luck/releases/tag/0.1.1
 [0.1.0]: https://github.com/ben-hamelin/wheel-of-luck/releases/tag/0.1.0
