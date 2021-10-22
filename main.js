@@ -7,7 +7,6 @@ function spin() {
     var x = Math.ceil (Math.random() *10) *100;
     document.getElementById('wheel').value=x
 
-
 }
 
 function createPuzzle() {
@@ -18,11 +17,11 @@ function createPuzzle() {
 function drawPuzzle(string){
     for (let x of string) {
         var letter = document.createElement("input");
-        letter.value=x;
+        letter.setAttribute('value', x);
         if (x == ' ') {
             letter.className ="spacer";
         } else {
-            letter.className = "letter";
+            letter.className = "letter hidden";
         }
         document.getElementById('theBoard').appendChild(letter);
     }
@@ -33,3 +32,17 @@ function clearboard(){
     myNode.innerHTML = '';
 
 }
+
+function guessLetter(letter){
+    if (letter == 'a') {
+        letters = document.querySelectorAll('input.hidden[value="'+letter+'"]');
+
+        for (x in letters){
+            x.className="letter";
+        }
+    }
+}
+
+
+
+
